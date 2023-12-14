@@ -44,3 +44,57 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+---
+# TrackTick Project
+
+## Project Structure
+
+The source code of the TrackTick application is organized into several directories within the `src` folder, each with a specific purpose:
+
+### `components`
+
+This directory contains all the React components used throughout the application. Each component is organized into subdirectories that match its context or functionality within the app.
+
+- **Generic:** Contains reusable UI components like buttons, inputs, etc.
+
+### `config`
+
+Holds the configuration files for different aspects of the application. This can include settings for:
+
+- **Pagination:** Default Pagination page limit
+- **Search Delay:** Debounce delay searchDelay.
+
+### `hooks`
+
+Custom React hooks that encapsulate shared logic across components are stored here. This can include:
+
+- **Data fetching:** Hooks that handle API requests and state management related to responses.
+- **Utils:** Utility hooks that provide commonly used functionalities like debouncer, queryParameters, etc.
+
+
+#### `useQueryParams`
+The useQueryParams hook in the provided is designed to fetch and manipulate query parameters from the URL.
+
+#### `useDebounce`
+implements a debouncing mechanism for a given value
+
+
+
+
+### `models`
+
+Contains TypeScript interfaces or types that define the shape of data objects used throughout the application. This directory helps maintain a consistent data structure and type safety.
+
+- **Component props:** Types or interfaces that define the props of React components.
+
+### `services`
+
+Service functions or utilities that interact with external services are located here, such as:
+
+- **API requests:** Functions to make HTTP requests to backend services using libraries like Axios.
+
+
+
+
